@@ -147,10 +147,11 @@ wlan0     Link encap:Ethernet  HWaddr 2c:d0:5a:61:5c:f4
   MCLAB@KHU:~$ scp ./wpad_2015-03-25-1_brcm2708.ipk root@192.168.1.1:/
   ```
 0. wpad 설치하기  
-  0. wpa_supplicant 이름을 변경합니다.(파일 충돌 예방)
-  '''
-  root@OpenWrt:/# mv /usr/sbin/wpa_supplicant /usr/sbin/wpa_supplicant2
-  '''
+  0. wpa_supplicant 이름을 변경합니다.(파일 충돌 예방)  
+    ```
+    root@OpenWrt:/# mv /usr/sbin/wpa_supplicant /usr/sbin/wpa_supplicant2
+    ```
+
   0. opkg를 통하여 wpad를 설치합니다.  
     ```
     root@OpenWrt:/# opkg install wpad_2015-03-25-1_brcm2708.ipk 
